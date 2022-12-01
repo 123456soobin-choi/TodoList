@@ -1,8 +1,6 @@
 import React from "react";
 import "./style.css";
 
-//부모로부터 받은 상태, 위에서 내려준 데이터를 보여주는 것
-//파라미터 props 안에 title, content, onChange, onCreate이 담겨있는 것
 const Form = ({ title, content, onChange, onCreate }) => {
   return (
     <div>

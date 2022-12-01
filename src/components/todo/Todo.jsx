@@ -1,7 +1,6 @@
 import React from "react";
 import "./style.css";
 
-//return안에는 if문 쓸 수 없고 어떤 조건은 삼항연산자로 나타내야함
 function Todo({ todo, onRemove, onToggle }) {
   return (
     <>

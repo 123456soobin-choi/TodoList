@@ -11,7 +11,7 @@ function List({ toDos, onRemove, onToggle }) {
           .filter((todo) => todo.isDone === false)
           // = .filter((todo) => !todo.isDone)
           .map((todo) => (
-            <Todo //Todo Component
+            <Todo
               todo={todo}
               key={todo.id}
               onRemove={onRemove}

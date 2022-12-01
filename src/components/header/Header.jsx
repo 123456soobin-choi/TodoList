@@ -1,6 +1,5 @@
 import React from "react";
 import "./style.css";
-//같은 폴ㄹ더 안의 파일이면 ./
 
 function Header() {
   return (

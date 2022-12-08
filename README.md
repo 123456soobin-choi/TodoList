@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+# 🔖 TodoList
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## - v1.0.0
+https://user-images.githubusercontent.com/107169675/206399357-9e222790-4197-4ae6-9cda-291fc7348997.mp4
 
-## Available Scripts
+## - v2.0.0
+https://user-images.githubusercontent.com/107169675/206399527-8d271569-c65e-4b2d-b72d-673b086fd134.mp4
 
-In the project directory, you can run:
+## ► TodoList 구경하기 ✈️ <br>
+https://todo-list-one-delta.vercel.app/
 
-### `npm start`
+## 📌 주요 기능
+- Create Todo
+- Read Todos, Todo
+- Update Todo
+- Delete Todo
+- Save Todo
+: LocalStorage
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ✏️ 기술 스택
+### v1.0.0 <br>
+<img src="https://img.shields.io/badge/react-61dafb?style=for-the-badge&logo=react&logoColor=white"> <img src="https://img.shields.io/badge/styledcomponents-db7093?style=for-the-badge&logo=styledcomponents&logoColor=white"> <img src="https://img.shields.io/badge/vercel-000000?style=for-the-badge&logo=vercel&logoColor=white"> <br>
+### v2.0.0 <br>
+<img src="https://img.shields.io/badge/redux-764abc?style=for-the-badge&logo=redux&logoColor=white"> <img src="https://img.shields.io/badge/react-61dafb?style=for-the-badge&logo=react&logoColor=white"> <img src="https://img.shields.io/badge/styledcomponents-db7093?style=for-the-badge&logo=styledcomponents&logoColor=white"> <img src="https://img.shields.io/badge/vercel-000000?style=for-the-badge&logo=vercel&logoColor=white"> <br>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🗂️ 컴포넌트 구성
+### v1.0.0 <br>
+```
+├── src
+│   ├── components
+│   │   ├── Form.jsx
+│   │   ├── Header.jsx
+│   │   ├── Layout.jsx
+│   │   ├── List.jsx
+│   │   └── Todo.jsx
+│   ├── pages
+│   │   └── TodoList.jsx
+```
 
-### `npm test`
+### v2.0.0 <br>
+```
+├── src
+│   ├── assets
+│   ├── components
+│   │   ├── common
+│   │   │   ├── Button.jsx
+│   │   │   └── Input.jsx
+│   │   ├── Empty.jsx
+│   │   ├── Form.jsx
+│   │   ├── Header.jsx
+│   │   ├── Layout.jsx
+│   │   ├── Todo.jsx
+│   │   └── TodoList.jsx
+│   ├── pages
+│   │   ├── Details.jsx
+│   │   └── Home.jsx
+│   ├── redux
+│   │   ├── config
+│   │   │   └── configStore.js
+│   │   └── modules
+│   │       └── todos.js
+│   ├── shared
+│   │   └── Router.js
+```
+### 🔑 assets
+- todo 완료/미완료 상태에 따라 다르게 보여줄 이미지 파일들과 React, Redux logo가 있다.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🔑 components
+#### ► common
+- Button : Form, Todo, Details 컴포넌트들에 공통으로 적용한 button 컴포넌트.
+- Input : 텍스트 타입 input 컴포넌트. Input이 focus된 경우와 value를 가지고 있는 경우 이벤트 적용.
+#### &
+- Empty : todo list가 없으면 보여줄 컴포넌트.
+- Form : todo title과 content를 입력하는 input과 추가하기 button이 있는 컴포넌트.
+- Header : Project title과 React, Redux logo가 있는 컴포넌트.
+- Layout : 전체 화면 구성을 보여주는 컴포넌트.
+- Todo : todo의 title, content와 delete, toggle(취소/완료) button이 있는 컴포넌트. 
+- TodoList : working() done() 영역으로 나누어 todo list를 보여주는 컴포넌트.
 
-### `npm run build`
+### 🔑 pages
+- Details : todo의 상세 내용을 볼 수 있는 컴포넌트.
+- Home : 전체 메인 페이지에 해당하는 컴포넌트.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🔑 redux
+#### ► config
+- configStore : 중앙 state 관리소인 Store를 만드는 설정 코드들이 있는 컴포넌트.
+#### ► modules
+- todo : todo list에 필요한 state들을 모은 모듈 컴포넌트.
+### 🔑 shared
+- Router : Route들을 설정하는 컴포넌트.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

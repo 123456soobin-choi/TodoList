@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import Todo from "./Todo";
 import Empty from "./Empty";
 import styled from "styled-components";
-import { notInitialized } from "react-redux/es/utils/useSyncExternalStore";
+// import { notInitialized } from "react-redux/es/utils/useSyncExternalStore";
 
 const ToDoBox = styled.div`
   display: flex;
@@ -44,7 +44,7 @@ const TodoList = () => {
           ))}
         </CardList>
       ) : (
-        <Empty>Add something to do...</Empty>
+        <Empty isDone={false}>Add something to do...</Empty>
       )}
       <Title>✨ Completed ✨</Title>
       {done.length !== 0 ? (
@@ -54,7 +54,7 @@ const TodoList = () => {
           ))}
         </CardList>
       ) : (
-        <Empty>Done with your work</Empty>
+        <Empty isDone={true}>Done with your work</Empty>
       )}
     </ToDoBox>
   );

@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addTodo } from "../redux/modules/todos";
 import styled from "styled-components";
-import Button from "../common/Button";
-import Input from "../common/Input";
+import Button from "./common/Button";
+import Input from "./common/Input";
 import { nanoid } from "nanoid";
+import { customAlphabet } from "nanoid";
 
 const FormBox = styled.div`
   width: 100%;
@@ -58,6 +59,7 @@ const Form = () => {
       return alert("입력해주세요!");
     } //유효성 검사
 
+    const nanoid = customAlphabet("01234567899abcedf", 3);
     //새로운 todo를 만들어서 액션객체에 담아서 모듈 todos.js로 보내기
     //value는 무엇? 새롭게 만든 todo의 title => todo.title
     const newTodo = {

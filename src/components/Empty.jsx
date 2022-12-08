@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-// import WorkingIcon from "../assets/box.png";
+import WorkingIcon from "../assets/box.png";
 import DoneIcon from "../assets/like.png";
 
 const StyledEmpty = styled.div`
@@ -23,11 +23,14 @@ const StyledEmpty = styled.div`
   }
 `;
 
-const Empty = ({ children }) => {
+const Empty = ({ isDone, children }) => {
   return (
     <StyledEmpty>
-      {/* <img src={WorkingIcon} alt="No Data" className="working" /> */}
-      <img src={DoneIcon} alt="No data" className="done" />
+      <img
+        src={isDone ? DoneIcon : WorkingIcon}
+        alt="No data"
+        className="done"
+      />
       <span className="text">{children}</span>
     </StyledEmpty>
   );

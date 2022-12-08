@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import { deleteTodo } from "../redux/modules/todos";
 import { toggleTodo } from "../redux/modules/todos";
 import styled from "styled-components";
-import Button from "../common/Button";
+import Button from "./common/Button";
 
 const StyledCard = styled.div`
   padding: 20px 0 20px 0;

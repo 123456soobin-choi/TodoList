@@ -1,10 +1,12 @@
 # 🔖 TodoList
 
 ## - v1.0.0
-https://user-images.githubusercontent.com/107169675/206399357-9e222790-4197-4ae6-9cda-291fc7348997.mp4
+
+![v1 0 0](https://user-images.githubusercontent.com/107169675/206620602-5613f694-f87d-448b-b29c-d4798b899d61.gif)
 
 ## - v2.0.0
-https://user-images.githubusercontent.com/107169675/206399527-8d271569-c65e-4b2d-b72d-673b086fd134.mp4
+
+![v2 0 0](https://user-images.githubusercontent.com/107169675/206620424-1a3b2368-66d9-47d2-bd2c-d515abc320b7.gif)
 
 ## ► TodoList 구경하기 ✈️ <br>
 https://todo-list-one-delta.vercel.app/
